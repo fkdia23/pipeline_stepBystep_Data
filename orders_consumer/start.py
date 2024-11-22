@@ -24,8 +24,7 @@ def create_kafka_stream(spark):
         .format("kafka") \
         .option("kafka.bootstrap.servers", "localhost:9092") \
         .option("subscribe", "test_topic") \
-        .option("failOnDataLoss", "false") \
-        .option("startingOffsets", "latest") \
+        .option("startingOffsets", "earliest") \
         .load()
 
 def get_orders_schema():
