@@ -23,7 +23,7 @@ if __name__ == "__main__":
     })
 
     # Chemin du fichier CSV
-    file_path = "weather-consumer/datasets/orders.csv"
+    file_path = "../datasets/orders.csv"
     
     # Lecture du fichier CSV avec pandas
     orders_pd_df = pd.read_csv(file_path)
