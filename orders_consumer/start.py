@@ -4,7 +4,7 @@ from pyspark.sql.types import *
 import time
 
 
-customers_data_file_path = "datasets/customers.csv"
+customers_data_file_path = "../datasets/customers.csv"
 
 def create_spark_session():
     """Créer et configurer la session Spark"""
