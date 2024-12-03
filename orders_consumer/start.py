@@ -24,6 +24,7 @@ def create_kafka_stream(spark):
         .format("kafka") \
         .option("kafka.bootstrap.servers", "localhost:9092") \
         .option("subscribe", "test_topic") \
+        .option("failOnDataLoss","false")\
         .option("startingOffsets", "earliest") \
         .load()
 
